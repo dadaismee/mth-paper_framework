@@ -22,7 +22,6 @@ jobs:
         with:
           args: |
             --toc \
-            --toc-depth=2 \
             --filter=pandoc-crossref \
             --csl=service/apa.csl \
             --bibliography=service/bibliography.bib \
