@@ -7,13 +7,9 @@ bibliography: [../service/valerii.bib]
 ## Introduction
 
 1. current smart and green urban governance practices tend to be overly human-centered [@sheikh2023], ‘data capitalism’ (West 2019), controlling and commodifying nonhumans (Elmqvist et al. 2021)
-
 2. Digital inclusion as a means for meaningful representation of MTH
-
 3. Urban placemaking as practice is human-centered as it needs reorientation to MTH
-
 4. There are scholars who do try to include MTH into placemaking processes.
-
 5. The reason to reach for the placemaking approach instead of, urban governance, is that only this provides the necessary level of granularity (or zooming in) to see the actual animal or plant species and those nature elements with specific needs and behaviors and **how their lifecycle is entangled with the daily life of urban places that is used by humans as well**. So it gives opportunities for a different approach to data representation or data stories about the more-than-human instead of being represented as a bunch of numbers.
 
 6. Contribution of the framework — how to collaboratively use data stories in more-than-human placemaking.
