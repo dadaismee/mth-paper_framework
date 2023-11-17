@@ -1,7 +1,6 @@
 ---
 title: A framework for more-than-human placemaking with data-storytelling
 author: Judit Boros, Valerii Shevchenko
-abstract: This is a paper on more-than-human placemaking with data-storytelling
 ---
 
 ## Introduction
