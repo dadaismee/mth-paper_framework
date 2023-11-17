@@ -18,7 +18,7 @@ jobs:
           cat *.bib > bibliography.bib
 
       - name: Convert to PDF
-        uses: docker://pandoc/core:latest
+        uses: docker://docker-pandoc:latest
         with:
           args: |
             --toc \
