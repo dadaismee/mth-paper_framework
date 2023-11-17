@@ -1,0 +1,39 @@
+name: ci 
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Assemble joint bibliography
+        run: | 
+          cd service
+          cat *.bib > bibliography.bib
+
+      - name: Convert to PDF
+        uses: docker://pandoc/core:latest
+        with:
+          args: |
+            --pdf-engine=xelatex \
+            --toc \
+            --toc-depth=2 \
+            --filter=pandoc-crossref \
+            --csl=service/apa.csl \
+            --bibliography=service/bibliography.bib \
+            --metadata-file=text/000_metadata.md \
+            --number-sections \
+            --citeproc \
+            --output=output.pdf text/*.md
+
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        with:
+          commit_message: Changed files
