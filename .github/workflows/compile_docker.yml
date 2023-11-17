@@ -21,7 +21,6 @@ jobs:
         uses: docker://pandoc/core:latest
         with:
           args: |
-            --pdf-engine=xelatex \
             --toc \
             --toc-depth=2 \
             --filter=pandoc-crossref \
